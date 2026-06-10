@@ -229,7 +229,7 @@ export default function HumanTetrisGame({
   }
 
   return (
-    <div className="game-area">
+    <div className="game-area human-game-area">
       <div className="game-board-section">
         <div className="canvas-wrapper">
           <canvas
