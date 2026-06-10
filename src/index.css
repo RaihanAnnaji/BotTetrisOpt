@@ -366,3 +366,105 @@ canvas {
     width: 100%;
   }
 }
+
+/* ========================= */
+/* KHUSUS PAGE HUMAN / MOBILE */
+/* ========================= */
+
+.human-game-area {
+  justify-items: center;
+}
+
+.human-game-area .game-board-section {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+}
+
+.human-game-area .canvas-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.human-game-area .side-panel {
+  width: 100%;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kontrol mobile dibuat lebih besar dan nyaman */
+.human-game-area .mobile-controls {
+  width: 100%;
+  max-width: 390px;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.human-game-area .mobile-controls-title {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.human-game-area .mobile-control-grid {
+  gap: 12px;
+}
+
+.human-game-area .control-button {
+  min-height: 68px;
+  font-size: 28px;
+  border-radius: 16px;
+  padding: 14px;
+}
+
+.human-game-area .rotate-button,
+.human-game-area .drop-button {
+  min-height: 62px;
+  font-size: 18px;
+}
+
+/* Khusus layar HP */
+@media (max-width: 760px) {
+  .human-game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .human-game-area .game-board-section {
+    order: 1;
+  }
+
+  .human-game-area .side-panel {
+    order: 2;
+  }
+
+  .human-game-area .canvas-wrapper {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .human-game-area .mobile-controls {
+    display: block;
+    max-width: 390px;
+  }
+}
+
+/* Kalau layar sangat kecil */
+@media (max-width: 390px) {
+  .human-game-area .mobile-controls {
+    max-width: 340px;
+    padding: 14px;
+  }
+
+  .human-game-area .control-button {
+    min-height: 60px;
+    font-size: 24px;
+  }
+
+  .human-game-area .rotate-button,
+  .human-game-area .drop-button {
+    font-size: 16px;
+  }
+}
