@@ -56,7 +56,7 @@ export default function HumanPage() {
             <input
               value={playerCode}
               onChange={(event) => setPlayerCode(event.target.value)}
-              placeholder="Contoh: P001"
+              placeholder=""
               required
             />
           </label>
